@@ -23,7 +23,7 @@ def home(request):
     return HttpResponse("Entonces, Como vamos bien nosotros tambien bueno este es la Seccion Principal")
 
 urlpatterns = [
-    path('', home, name='home'),
+    path('', home, name='Main'),
     path('admin/', admin.site.urls),
     path('appBunde/', include('appBunde.urls')),
 ]
